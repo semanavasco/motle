@@ -1,5 +1,3 @@
-let word = "FLICS";
-
 const incorrectWordLength = document.getElementById("word-length");
 
 const resultRows = document.getElementsByClassName("result-row");
@@ -48,27 +46,7 @@ function setResultStyles() {
   for (let i = 0; i < 5; i++) {
     const letter = currentRow[i].innerHTML;
 
-    if (word.includes(letter) && word.indexOf(letter) === i) {
-      // RESULT GRID COLOR EDIT
-      currentRow[i].classList.add("letter-ok");
-      currentRow[i].classList.remove("has-content");
-      currentRow[i].classList.remove("selected");
-
-      // KEYBOARD COLOR EDIT
-      document.getElementById(letter).classList.add("ok");
-      document.getElementById(letter).classList.remove("exists");
-      document.getElementById(letter).classList.remove("not-exists");
-    } else if (word.includes(letter)) {
-      // RESULT GRID COLOR EDIT
-      currentRow[i].classList.add("letter-exists");
-      currentRow[i].classList.remove("has-content");
-      currentRow[i].classList.remove("selected");
-
-      // KEYBOARD COLOR EDIT
-      document.getElementById(letter).classList.remove("ok");
-      document.getElementById(letter).classList.add("exists");
-      document.getElementById(letter).classList.remove("not-exists");
-    } else {
+    if (!word.includes(letter)) {
       // RESULT GRID COLOR EDIT
       currentRow[i].classList.add("letter-not-exists");
       currentRow[i].classList.remove("has-content");
@@ -78,7 +56,32 @@ function setResultStyles() {
       document.getElementById(letter).classList.remove("ok");
       document.getElementById(letter).classList.remove("exists");
       document.getElementById(letter).classList.add("not-exists");
+      continue;
     }
+
+    if (word[i] === letter) {
+      // RESULT GRID COLOR EDIT
+      currentRow[i].classList.add("letter-ok");
+      currentRow[i].classList.remove("has-content");
+      currentRow[i].classList.remove("selected");
+
+      // KEYBOARD COLOR EDIT
+      document.getElementById(letter).classList.add("ok");
+      document.getElementById(letter).classList.remove("exists");
+      document.getElementById(letter).classList.remove("not-exists");
+      continue;
+    }
+
+    // RESULT GRID COLOR EDIT
+    currentRow[i].classList.add("letter-exists");
+    currentRow[i].classList.remove("has-content");
+    currentRow[i].classList.remove("selected");
+
+    // KEYBOARD COLOR EDIT
+    document.getElementById(letter).classList.remove("ok");
+    document.getElementById(letter).classList.add("exists");
+    document.getElementById(letter).classList.remove("not-exists");
+    continue;
   }
 }
 
