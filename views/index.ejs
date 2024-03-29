@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motle</title>
+
+    <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>MOTLE</h1>
+    </div>
+    <div class="notifications">
+      <p class="notification" id="word-length">
+        Veuillez insérer un mot à 5 lettres.
+      </p>
+    </div>
+    <div class="game">
+      <div class="result-box">
+        <div class="result-row">
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+        </div>
+        <div class="result-row">
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+        </div>
+        <div class="result-row">
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+        </div>
+        <div class="result-row">
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+        </div>
+        <div class="result-row">
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+        </div>
+        <div class="result-row">
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+          <div class="result-letter"></div>
+        </div>
+      </div>
+      <div class="keyboard">
+        <div class="button-rows">
+          <button id="A" class="buttons letters" onclick="clickedLetter('A')">
+            A
+          </button>
+          <button id="Z" class="buttons letters" onclick="clickedLetter('Z')">
+            Z
+          </button>
+          <button id="E" class="buttons letters" onclick="clickedLetter('E')">
+            E
+          </button>
+          <button id="R" class="buttons letters" onclick="clickedLetter('R')">
+            R
+          </button>
+          <button id="T" class="buttons letters" onclick="clickedLetter('T')">
+            T
+          </button>
+          <button id="Y" class="buttons letters" onclick="clickedLetter('Y')">
+            Y
+          </button>
+          <button id="U" class="buttons letters" onclick="clickedLetter('U')">
+            U
+          </button>
+          <button id="I" class="buttons letters" onclick="clickedLetter('I')">
+            I
+          </button>
+          <button id="O" class="buttons letters" onclick="clickedLetter('O')">
+            O
+          </button>
+          <button id="P" class="buttons letters" onclick="clickedLetter('P')">
+            P
+          </button>
+        </div>
+        <div class="button-rows">
+          <button id="Q" class="buttons letters" onclick="clickedLetter('Q')">
+            Q
+          </button>
+          <button id="S" class="buttons letters" onclick="clickedLetter('S')">
+            S
+          </button>
+          <button id="D" class="buttons letters" onclick="clickedLetter('D')">
+            D
+          </button>
+          <button id="F" class="buttons letters" onclick="clickedLetter('F')">
+            F
+          </button>
+          <button id="G" class="buttons letters" onclick="clickedLetter('G')">
+            G
+          </button>
+          <button id="H" class="buttons letters" onclick="clickedLetter('H')">
+            H
+          </button>
+          <button id="J" class="buttons letters" onclick="clickedLetter('J')">
+            J
+          </button>
+          <button id="K" class="buttons letters" onclick="clickedLetter('K')">
+            K
+          </button>
+          <button id="L" class="buttons letters" onclick="clickedLetter('L')">
+            L
+          </button>
+          <button id="M" class="buttons letters" onclick="clickedLetter('M')">
+            M
+          </button>
+        </div>
+        <div class="button-rows">
+          <button id="ENTER" class="buttons utilities" onclick="clickedEnter()">
+            ↩
+          </button>
+          <button id="W" class="buttons letters" onclick="clickedLetter('W')">
+            W
+          </button>
+          <button id="X" class="buttons letters" onclick="clickedLetter('X')">
+            X
+          </button>
+          <button id="C" class="buttons letters" onclick="clickedLetter('C')">
+            C
+          </button>
+          <button id="V" class="buttons letters" onclick="clickedLetter('V')">
+            V
+          </button>
+          <button id="B" class="buttons letters" onclick="clickedLetter('B')">
+            B
+          </button>
+          <button id="N" class="buttons letters" onclick="clickedLetter('N')">
+            N
+          </button>
+          <button
+            id="REMOVE"
+            class="buttons utilities"
+            onclick="removeLetter()"
+          >
+            〈
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
