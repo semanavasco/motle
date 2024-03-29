@@ -29,7 +29,7 @@ body {
   height: 7.5rem;
 }
 
-.notification {
+#notification {
   background-color: #545454;
   padding: 0.75rem;
   border-radius: 1rem;
@@ -83,21 +83,21 @@ body {
   background-color: #927001;
   border: 0.2rem solid #927001;
   border-radius: 0.3rem;
-  animation: spawnRotate .75s linear;
+  animation: spawnRotate 0.75s linear;
 }
 
 .letter-ok {
   background-color: #019208;
   border: 0.2rem solid #019208;
   border-radius: 0.3rem;
-  animation: spawnRotate .75s linear;
+  animation: spawnRotate 0.75s linear;
 }
 
 .letter-not-exists {
   background-color: #3d3d3d;
   border: 0.2rem solid #3d3d3d;
   border-radius: 0.3rem;
-  animation: spawnRotate .75s linear;
+  animation: spawnRotate 0.75s linear;
 }
 
 @keyframes spawnRotate {

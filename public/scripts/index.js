@@ -1,4 +1,4 @@
-const incorrectWordLength = document.getElementById("word-length");
+const notification = document.getElementById("notification");
 
 const resultRows = document.getElementsByClassName("result-row");
 
@@ -23,12 +23,13 @@ function clickedLetter(letter) {
 
 async function clickedEnter() {
   if (currentLetter !== 4 || currentRow[currentLetter].innerHTML === "") {
-    if (incorrectWordLength.style.opacity === 1) return;
+    if (notification.style.opacity === 1) return;
 
-    incorrectWordLength.style.opacity = 1;
+    notification.innerHTML = "Veuillez insérer un mot à 5 lettres.";
+    notification.style.opacity = 1;
 
     setTimeout(() => {
-      incorrectWordLength.style.opacity = 0;
+      notification.style.opacity = 0;
     }, 1000);
     return;
   }
