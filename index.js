@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
     .replace(/[\u0300-\u036f]/g, "")
     .toUpperCase();
 
-  res.render("index", { WORD: mot });
+  res.render("index", { WORD: mot, WORDS: mots });
 });
 
 app.listen(PORT, () => {
