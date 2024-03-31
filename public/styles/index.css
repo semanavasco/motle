@@ -217,8 +217,20 @@ body {
 }
 
 .utilities {
-  width: 5.5rem;
+  width: 5.4rem;
   height: 3.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .letters {
+    width: 2rem;
+    height: 2.75rem;
+  }
+
+  .utilities {
+    width: 4.4rem;
+    height: 2.75rem;
+  }
 }
 
 .buttons:hover {
