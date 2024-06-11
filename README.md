@@ -1,2 +1,3 @@
-# motle
-Un jeu où on devine un mot généré aléatoirement.
+# Motle
+
+> A game where you guess a randomized 5 letter word.
